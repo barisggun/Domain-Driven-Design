@@ -1,9 +1,12 @@
+using MediatR;
+using Order.Domain.Events;
 using Order.Domain.SeedWork;
 
 namespace Order.Domain.AggregateModels.OrderModels;
 
 public class Order : BaseEntity,IAggregateRoot
 {
+    private readonly IMediator _mediator;
     //bu order içerisi adresi yönetecek vs olduğu için işaretledik
     public DateTime OrderDate { get; private set; }
     public string Description { get; private set; }
@@ -27,6 +30,8 @@ public class Order : BaseEntity,IAggregateRoot
         OrderStatus = orderStatus;
         Address = address;
         OrderItems = orderItems;
+        
+        AddDomainEvents(new OrderStartedDomainEvent("","",this));
     }
 
     public void AddOrItem(int quantity,decimal price, int productId)

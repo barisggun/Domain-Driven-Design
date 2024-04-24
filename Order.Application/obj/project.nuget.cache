@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "NXWrnaadIf/WVpyUe8U84PMw/68o2DbziwpOPB8oeVigDO4M7JczvYLKBD9eNS/x2BBmMRw7/p4VzOw2v301bg==",
+  "dgSpecHash": "kgTAfhQN0LJHCc1IlXBt6bcQ6nflBqezvM9pNBt2b6nGh/UE8vc6zn0XOkSp8k6BbY0s/Yu8muHGkrvUbcGuAw==",
   "success": true,
   "projectFilePath": "/Users/baris/RiderProjects/Domain-Driven-Design/Order.Application/Order.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/baris/.nuget/packages/autofac/8.0.0/autofac.8.0.0.nupkg.sha512",
+    "/Users/baris/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/Users/baris/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/baris/.nuget/packages/mediatr.extensions.autofac.dependencyinjection/12.0.0/mediatr.extensions.autofac.dependencyinjection.12.0.0.nupkg.sha512",
+    "/Users/baris/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/baris/.nuget/packages/system.diagnostics.diagnosticsource/7.0.2/system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
