@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Order.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Order.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Order.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Order.Application.dll": {}
+        }
+      },
+      "Order.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Order.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Order.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Order.Application/1.0.0": {
+      "type": "project",
+      "path": "../Order.Application/Order.Application.csproj",
+      "msbuildProject": "../Order.Application/Order.Application.csproj"
+    },
+    "Order.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Order.Domain/Order.Domain.csproj",
+      "msbuildProject": "../Order.Domain/Order.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Order.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/baris/.nuget/packages/": {}
@@ -31,7 +68,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/baris/RiderProjects/Domain-Driven-Design/Order.Application/Order.Application.csproj": {
+              "projectPath": "/Users/baris/RiderProjects/Domain-Driven-Design/Order.Application/Order.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
